@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
       "start":"node ./node_modules/http-server/bin/http-server"
   },
-  "author": "",
+  "author": "Ian Stewart",
   "license": "ISC",
   "devDependencies": {
     "http-server": "^0.11.1"
