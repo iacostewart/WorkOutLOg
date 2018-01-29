@@ -7,10 +7,10 @@
 
 //wraping the varialbe and define methond in a export statement. we will return User and change 'Sewuelize' to 'DataTypes'.
 
-    module.exports = function(sequenlize, DataTypes){
-        var User = sequenlize.define('user', {
+    module.exports = function(sequelize, DataTypes){
+        return sequelize.define('user', {
             username: DataTypes.STRING,
             passwordhash: DataTypes.STRING
         });
-        return User;
+       
     };
