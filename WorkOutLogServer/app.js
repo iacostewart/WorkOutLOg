@@ -1,9 +1,7 @@
  var express = require('express');
 	var app = express();
 // code below sets up the required status for headers in communication. 
-    app.use(require('/middleware/headers'));
-
-var bodyParser = require('body-parser');
+    app.use(require('./middleware/headers'));
 
     app.use('/api/test', function(req, res){
         res.send("hello World");
@@ -11,14 +9,21 @@ var bodyParser = require('body-parser');
 
     app.listen(3000, function(){
         console.log("app is open on 3000!");
-    })
+    });
+
+    var bodyParser = require('body-parser');
+
+    
+ 
+
+    
 
     var Sequelize = require('sequelize');
-var sequelize = new Sequelize('workoutlog', 'postgres', 'Ij7Ae7Ns0S@10414forever',{
-    host:'localhost',
+ var sequelize = new Sequelize('WorkOutLog', 'postgres', 'Ij7Ae7Ns0S@10414forever',{
+     host:'localhost',
     dialect: 'postgres'
 
-});
+})
 
 sequelize.authenticate().then(
     function() {
