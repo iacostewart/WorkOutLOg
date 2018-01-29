@@ -60,7 +60,7 @@ app.post('/api/user', function(req, res){
         function createSuccess(user){
             res.json({
                 user: user, 
-                message: 'create'
+                message: 'create let there be light'
     
             });
 
@@ -73,5 +73,5 @@ app.post('/api/user', function(req, res){
     );
 });
 
-
-    //User.sync({ force: true });
+//!!!!!***** we will use this function when we need to drop a table. ******** !!!!!
+    //User.sync({ force: true })
