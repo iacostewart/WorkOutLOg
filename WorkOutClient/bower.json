@@ -3,10 +3,10 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "Ian Stewart"
+    "Ian Stewart <iacostewart@msn.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/iacostewart/WorkOutLog",
   "ignore": [
     "**/.*",
     "node_modules",
