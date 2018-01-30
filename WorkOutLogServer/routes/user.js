@@ -15,20 +15,15 @@ router.post('/', function(req, res){
     }).then( // sequelize is going to return the object it created from db.
 
         function createSuccess(user){
-            let token = jwt.sign({id:user.id}, "i_am_secret", {expiresln: 60*60*24});
+            var token = jwt.sign({id: user.id}, "i_am_secret", {expiresIn: 60*60*24});
             res.json({
                 user: user, 
                 message:'created',
-                sessionToken:token
-                
-    
+                sessionToken: token
             });
-
         },
         function createError(err){
-
             res.send(500, err.message);
-
         }
     );
 });
